@@ -21,4 +21,3 @@ def get_dependencies():
 
 if __name__ == "__main__":
     get_dependencies()
-    load_models()
