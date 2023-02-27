@@ -3,9 +3,7 @@
 
 # In this example: A Huggingface BERT model
 
-from transformers import pipeline
-
-def download_model():
+def get_dependencies():
     # do a dry run of loading the huggingface model, which will download weights
     !git clone https://github.com/corranmac/open_retrieval
     !git clone https://github.com/allenai/vila
@@ -20,5 +18,7 @@ def download_model():
     !pip install sentence-transformers sentence-splitter -q
     !pip install pymupdf
 
+
 if __name__ == "__main__":
-    download_model()
+    get_dependencies()
+    load_models()
